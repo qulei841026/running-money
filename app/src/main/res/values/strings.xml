@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">RunningMoney</string>
 
+    <string name="total_money">总资产</string>
+    <string name="plan_income">计划收益</string>
+    <string name="financial_money">理财金额</string>
+    <string name="expect_income">预期收益</string>
+
     <string name="jump">Jump</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

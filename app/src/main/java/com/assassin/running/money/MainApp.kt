@@ -2,10 +2,7 @@ package com.assassin.running.money
 
 import android.app.Application
 import android.content.Context
-import android.util.DisplayMetrics
 import android.util.Log
-import android.view.WindowManager
-
 
 class MainApp : Application() {
 
@@ -23,11 +20,8 @@ class MainApp : Application() {
         screenDisplay(this)
     }
 
-
     private fun screenDisplay(context: Context) {
-        val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-        val dm = DisplayMetrics()
-        windowManager.defaultDisplay.getMetrics(dm)
+        val dm = context.resources.displayMetrics
         screenWidth = dm.widthPixels       //屏幕宽度（像素）
         screenHeight = dm.heightPixels     //屏幕高度（像素）
         density = dm.density               //屏幕密度（0.75 / 1.0 / 1.5）

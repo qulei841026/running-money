@@ -7,6 +7,7 @@ import android.util.Log
 import com.assassin.running.money.R
 import com.assassin.running.money.widget.StatusBarHelper
 import kotlinx.android.synthetic.main.home_activity.*
+import kotlinx.android.synthetic.main.home_app_bar.*
 
 /**
  * HomeActivity
@@ -17,8 +18,10 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_activity)
+
         setSupportActionBar(toolbar_home)
 
+        System.gc()
         val default = resources.getDimensionPixelSize(R.dimen.status_bar_default_height)
         StatusBarHelper.setStatusBarTransparent(window)
         StatusBarHelper.setStatusBarMarginTop(toolbar = toolbar_home, default = default)
