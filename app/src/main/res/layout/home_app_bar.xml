@@ -6,19 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:theme="@style/AppTheme.AppBarOverlay"
+    app:layout_behavior="com.assassin.running.money.widget.HomeAppBarBehavior"
     tools:context=".home.HomeActivity">
 
     <android.support.design.widget.CollapsingToolbarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:contentScrim="?attr/colorPrimary"
+        app:contentScrim="@color/colorPrimaryDark"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:titleEnabled="false">
 
         <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_banner_home"
             android:layout_width="match_parent"
             android:layout_height="260dp"
-            android:background="#5522EE"
+            android:background="@color/colorPrimary"
             app:layout_collapseMode="parallax"
             app:layout_collapseParallaxMultiplier="0.7">
 
@@ -30,7 +32,7 @@
                 android:layout_marginRight="160dp"
                 android:layout_marginTop="100dp"
                 android:text="@string/financial_money"
-                android:textColor="@color/primary_light_text"
+                android:textColor="@color/colorPaletteSecondaryText"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -39,8 +41,8 @@
                 android:id="@+id/tv_home_financial_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100,000.00"
-                android:textColor="@color/primary_title_text"
+                android:text="100,000000000000000.00"
+                android:textColor="@color/colorPaletteText"
                 android:textSize="28sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_title_home_financial_money"
                 app:layout_constraintTop_toBottomOf="@+id/tv_title_home_financial_money" />
@@ -49,9 +51,9 @@
                 android:id="@+id/tv_title_home_expect_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:text="@string/expect_income"
-                android:textColor="@color/primary_light_text"
+                android:textColor="@color/colorPaletteSecondaryText"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_home_financial_money"
                 app:layout_constraintTop_toBottomOf="@+id/tv_home_financial_money" />
@@ -61,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3,820.00"
-                android:textColor="@color/primary_title_text"
+                android:textColor="@color/colorPaletteText"
                 android:textSize="28sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_title_home_expect_income"
                 app:layout_constraintTop_toBottomOf="@+id/tv_title_home_expect_income" />
@@ -72,11 +74,32 @@
             android:id="@+id/toolbar_home"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#00BB00"
+            android:background="#00000000"
             android:visibility="visible"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
             app:layout_collapseMode="pin"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/jump" />
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="38dp"
+                    android:layout_marginRight="38dp"
+                    android:text="总资产:10000,000.00"
+                    android:textColor="@color/colorPaletteText"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.CollapsingToolbarLayout>
 
