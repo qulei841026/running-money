@@ -9,6 +9,7 @@ import com.assassin.running.money.widget.StatusBarHelper
 import kotlinx.android.synthetic.main.home_activity.*
 import kotlinx.android.synthetic.main.home_app_bar.*
 
+
 /**
  * HomeActivity
  * Created by Qulit on 2017/11/27.
@@ -21,10 +22,11 @@ class HomeActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar_home)
 
-        System.gc()
         val default = resources.getDimensionPixelSize(R.dimen.status_bar_default_height)
         StatusBarHelper.setStatusBarTransparent(window)
         StatusBarHelper.setStatusBarMarginTop(toolbar = toolbar_home, default = default)
+
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
 
         val toggle = ActionBarDrawerToggle(this, drawer_layout_home, toolbar_home,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -36,6 +38,5 @@ class HomeActivity : AppCompatActivity() {
         })
 
     }
-
 
 }
