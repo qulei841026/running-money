@@ -17,7 +17,7 @@ class HomeAppBarBehavior : AppBarLayout.Behavior {
         val TAG = "HomeAppBarBehavior"
     }
 
-    fun debug(log: Any) = Log.d("qulei", "[${SwellView.TAG}]->$log")
+    fun debug(log:Any) = Log.d("qulei","[$TAG]->$log")
 
     constructor() : super()
 
