@@ -3,8 +3,17 @@ package com.assassin.running.money
 import android.app.Application
 import android.content.Context
 import android.util.Log
+import com.assassin.running.money.db.AppDatabaseHelper
 
 class MainApp : Application() {
+
+    companion object {
+        private var app: MainApp? = null
+
+        fun getInstance(): MainApp {
+            return app!!
+        }
+    }
 
     /**
      * 手机屏幕参数
@@ -14,8 +23,11 @@ class MainApp : Application() {
     private var screenWidth: Int = 0
     private var screenHeight: Int = 0
 
+    val dbHelper = AppDatabaseHelper(this).database
+
     override fun onCreate() {
         super.onCreate()
+        app = MainApp@ this
         Log.i("qulei", "MainApp onCreate")
         screenDisplay(this)
     }
@@ -31,5 +43,6 @@ class MainApp : Application() {
                 + ",screenHeight :" + screenHeight
                 + ",density :" + density + ",densityDpi :" + densityDpi)
     }
+
 
 }
