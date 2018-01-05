@@ -1,3 +1,16 @@
 <resources>
+
+
+    <dimen name="measure_dimen">108.5dp</dimen>
+
     <dimen name="status_bar_default_height">24dp</dimen>
+
+    <dimen name="item_font_size_large">17sp</dimen>
+    <dimen name="item_font_size_normal">15sp</dimen>
+    <dimen name="item_font_size_small">13sp</dimen>
+
+    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_normal">19sp</dimen>
+    <dimen name="font_size_small">16sp</dimen>
+
 </resources>

@@ -14,18 +14,11 @@
 
         <include layout="@layout/home_app_bar" />
 
-        <android.support.v4.widget.NestedScrollView
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_home"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:text="@string/large_text" />
-
-        </android.support.v4.widget.NestedScrollView>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -35,7 +28,6 @@
             app:layout_anchor="@id/app_bar_home"
             app:layout_anchorGravity="bottom|end"
             app:srcCompat="@android:drawable/ic_dialog_email" />
-
 
     </android.support.design.widget.CoordinatorLayout>
 
@@ -47,3 +39,9 @@
         app:insetForeground="@android:color/transparent" />
 
 </android.support.v4.widget.DrawerLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="16dp"--><!--android:text="@string/large_text" />-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->

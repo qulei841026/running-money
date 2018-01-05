@@ -11,6 +11,9 @@
     <color name="divider">#BDBDBD</color>
      -->
 
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+
     <color name="colorPrimary">#FF5722</color>
     <!--<color name="colorPrimaryDark">#E64A19</color>-->
     <color name="colorPrimaryDark">#AA0099</color>

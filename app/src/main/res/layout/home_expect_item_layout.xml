@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="108.5dp">
+
+    <TextView
+        android:id="@+id/tv_home_expect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:text="定期理财"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/item_font_size_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_home_expect_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="预期收益率 5.5%"
+        android:textColor="@color/colorPrimarySecondaryText"
+        android:textSize="@dimen/item_font_size_small"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_expect_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_expect_name" />
+
+    <TextView
+        android:id="@+id/tv_home_expect_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="计划投入金额 10,000.00"
+        android:textColor="@color/colorPrimarySecondaryText"
+        android:textSize="@dimen/item_font_size_small"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_expect_level"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_expect_level" />
+
+    <LinearLayout
+        android:layout_width="114dp"
+        android:layout_height="62.5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="@drawable/home_expect_total_item_top_layer"
+            android:gravity="center"
+            android:text="投资金额"
+            android:textColor="@color/colorPaletteSecondaryText"
+            android:textSize="@dimen/item_font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_home_expect_total"
+            android:layout_width="match_parent"
+            android:layout_height="39.5dp"
+            android:background="@drawable/home_expect_total_item_bottom_layer"
+            android:gravity="center"
+            android:text="500,000,000.00"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/item_font_size_normal" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
