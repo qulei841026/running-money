@@ -1,10 +1,24 @@
 <resources>
     <string name="app_name">RunningMoney</string>
 
-    <string name="total_money">总资产</string>
+
     <string name="plan_income">计划收益</string>
     <string name="financial_money">理财金额</string>
     <string name="expect_income">预期收益</string>
+
+    <string name="expect_money_income">预期资产收益</string>
+    <string name="expect_investment_repay">预计投资回报</string>
+    <string name="total_money">总资产</string>
+    <string name="total_investment">总投资</string>
+
+    <string name="investment_money">投资金额</string>
+    <string name="expect_increase_field">预期收益率 %1$s</string>
+    <string name="no_set_expect">未制定预期目标</string>
+    <string name="plan_money_field">计划投入金额 %1$s</string>
+    <string name="no_set_plan">未制定投入计划</string>
+
+    <string name="nothing">无</string>
+    <string name="zero">0.00</string>
 
     <string name="jump">Jump</string>
 

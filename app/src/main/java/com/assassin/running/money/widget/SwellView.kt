@@ -100,10 +100,9 @@ class SwellView : View {
 
     override fun onDetachedFromWindow() {
         super.onDetachedFromWindow()
-        if (animator != null) {
-            debug("animator cancel")
-            animator?.cancel()
-        }
+        debug("animator cancel")
+        animator?.cancel()
+
     }
 
 }
