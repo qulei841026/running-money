@@ -3,7 +3,6 @@ package com.assassin.running.money
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.assassin.running.money.home.HomeActivity
@@ -15,14 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val measureDimen = resources.getDimensionPixelSize(R.dimen.measure_dimen)
-        Log.d("qulei", "measureDimen=$measureDimen")
-
         // Example of a call to a native method
         sample_text.text = stringFromJNI()
         sample_text.setOnClickListener({
             swell_view.start()
         })
+
     }
 
     /**

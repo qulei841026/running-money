@@ -9,7 +9,8 @@ import android.view.Window
 import android.view.WindowManager
 
 /**
-
+ * StatusBarUtil
+ *
  * Created by Qulit on 2017/11/29.
  */
 object StatusBarUtil {

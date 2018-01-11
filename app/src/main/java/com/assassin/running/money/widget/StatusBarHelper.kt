@@ -8,6 +8,7 @@ import com.assassin.running.money.utils.StatusBarUtil
 
 /**
  * StatusBarHelper
+ *
  * Created by Qulit on 2017/11/29.
  */
 class StatusBarHelper {

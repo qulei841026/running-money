@@ -1,0 +1,32 @@
+[
+  {
+    "title": "股票投资",
+    "increase": "1000",
+    "planMoney": "10000000",
+    "totalMoney": "10000000"
+  },
+  {
+    "title": "基金投资",
+    "increase": "1000",
+    "planMoney": "10000000",
+    "totalMoney": "10000000"
+  },
+  {
+    "title": "P2P理财",
+    "increase": "700",
+    "planMoney": "10000000",
+    "totalMoney": "10000000"
+  },
+  {
+    "title": "定期理财",
+    "increase": "500",
+    "planMoney": "10000000",
+    "totalMoney": "10000000"
+  },
+  {
+    "title": "银行理财",
+    "increase": "420",
+    "planMoney": "10000000",
+    "totalMoney": "10000000"
+  }
+]
