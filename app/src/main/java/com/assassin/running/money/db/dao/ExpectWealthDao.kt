@@ -6,7 +6,8 @@ import android.arch.persistence.room.Query
 import com.assassin.running.money.db.entity.ExpectWealth
 
 /**
- * Created by Le-q on 2018/1/4.
+ * ExpectWealthDao
+ * Created by Qulit on 2018/1/4.
  */
 @Dao
 interface ExpectWealthDao {

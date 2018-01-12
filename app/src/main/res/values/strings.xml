@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">RunningMoney</string>
-
+    <string name="running_money">Running Money</string>
 
     <string name="plan_income">计划收益</string>
     <string name="financial_money">理财金额</string>
     <string name="expect_income">预期收益</string>
+
+    <string name="money_alloc">资产配置</string>
+    <string name="financial_planning">理财规划</string>
 
     <string name="expect_money_income">预期资产收益</string>
     <string name="expect_investment_repay">预计投资回报</string>
