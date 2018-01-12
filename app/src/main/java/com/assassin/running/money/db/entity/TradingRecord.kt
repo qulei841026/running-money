@@ -6,7 +6,7 @@ import android.arch.persistence.room.PrimaryKey
 
 /**
  * 交易记录
- * Created by Le-q on 2018/1/4.
+ * Created by Qulit on 2018/1/4.
  */
 @Entity(tableName = "trading_record")
 class TradingRecord {

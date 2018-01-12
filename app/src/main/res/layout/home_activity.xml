@@ -35,6 +35,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:insetForeground="@android:color/transparent" />
+        app:headerLayout="@layout/nav_header_main"
+        app:insetForeground="@android:color/transparent"
+        app:menu="@menu/home_navigation_drawer" />
 
 </android.support.v4.widget.DrawerLayout>

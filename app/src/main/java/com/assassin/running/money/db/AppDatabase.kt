@@ -6,7 +6,8 @@ import com.assassin.running.money.db.dao.ExpectWealthDao
 import com.assassin.running.money.db.entity.ExpectWealth
 
 /**
- * Created by Le-q on 2018/1/4.
+ * AppDatabase
+ * Created by Qulit on 2018/1/4.
  */
 @Database(entities = [(ExpectWealth::class)], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

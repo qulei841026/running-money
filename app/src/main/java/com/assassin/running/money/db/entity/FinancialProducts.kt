@@ -5,7 +5,8 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
 /**
- * Created by Le-q on 2018/1/4.
+ * FinancialProducts
+ * Created by Qulit on 2018/1/4.
  */
 @Entity(tableName = "financial_products")
 class FinancialProducts {
