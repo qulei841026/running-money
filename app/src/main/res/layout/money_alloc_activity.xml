@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/common_layout_divider"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/total_money"
+            android:textColor="@color/colorPrimarySecondaryText"
+            android:textSize="@dimen/font_size_normal" />
+
+        <TextView
+            android:id="@+id/et_ma_total_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="end"
+            android:text="@string/zero"
+            android:textColor="@color/colorAccent"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/common_layout_divider"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/expect_income"
+            android:textColor="@color/colorPrimarySecondaryText"
+            android:textSize="@dimen/font_size_normal" />
+
+        <EditText
+            android:id="@+id/etExpectIncome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:enabled="false"
+            android:gravity="end"
+            android:inputType="number"
+            android:text="@string/zero_percent"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/font_size_large" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyTextColor="@color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -3,23 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
             android:id="@+id/nav_menu_money_alloc"
+            android:icon="@drawable/ic_wallet_black_24dp"
             android:title="@string/money_alloc" />
         <item
             android:id="@+id/nav_menu_financial_planning"
+            android:icon="@drawable/ic_payment_black_24dp"
             android:title="@string/financial_planning" />
     </group>
 
-    <item android:title="Communicate">
+    <item
+        android:title="@string/preference"
+        android:visible="false">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:title="Share" />
+                android:id="@+id/nav_setting"
+                android:title="@string/setting" />
             <item
-                android:id="@+id/nav_send"
-                android:title="Send" />
+                android:id="@+id/nav_more"
+                android:title="@string/more" />
         </menu>
     </item>
 
