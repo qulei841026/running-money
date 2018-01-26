@@ -16,7 +16,7 @@ import java.io.InputStreamReader
 class HomePresenter(val view: IHomeView) : IHomePresenter {
 
     companion object {
-        val TAG = "HomePresenter"
+        const val TAG = "HomePresenter"
     }
 
     fun debug(log: Any) = Log.d("qulei", "[$TAG]->$log")

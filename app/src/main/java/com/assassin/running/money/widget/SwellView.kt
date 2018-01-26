@@ -1,8 +1,10 @@
 package com.assassin.running.money.widget
 
 import android.animation.ValueAnimator
+import android.annotation.TargetApi
 import android.content.Context
 import android.graphics.*
+import android.os.Build
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
@@ -41,6 +43,7 @@ class SwellView : View {
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
             super(context, attrs, defStyleAttr)
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, defStyleRes: Int) :
             super(context, attrs, defStyleAttr, defStyleRes)
 
@@ -79,7 +82,6 @@ class SwellView : View {
         drawPath.close()
         return drawPath
     }
-
 
     private var animator: ValueAnimator? = null
 
