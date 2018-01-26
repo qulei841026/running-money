@@ -23,14 +23,15 @@
             android:textSize="@dimen/font_size_normal" />
 
         <TextView
-            android:id="@+id/et_ma_total_money"
+            android:id="@+id/tv_ma_total_money"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
             android:layout_weight="1"
             android:background="@color/transparent"
-            android:gravity="end"
-            android:text="@string/zero"
+            android:gravity="end|center_vertical"
+            android:text="@string/zero_decimal"
             android:textColor="@color/colorAccent"
             android:textSize="28sp" />
 
@@ -54,17 +55,15 @@
             android:textColor="@color/colorPrimarySecondaryText"
             android:textSize="@dimen/font_size_normal" />
 
-        <EditText
-            android:id="@+id/etExpectIncome"
+        <TextView
+            android:id="@+id/tv_ma_expect_income"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@color/transparent"
-            android:cursorVisible="true"
-            android:enabled="false"
-            android:gravity="end"
-            android:inputType="number"
+            android:gravity="end|center_vertical"
             android:text="@string/zero_percent"
             android:textColor="@color/colorPrimaryText"
             android:textSize="@dimen/font_size_large" />

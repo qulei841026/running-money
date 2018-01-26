@@ -3,10 +3,12 @@ package com.assassin.running.money.members.ma
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import android.widget.TextView
 import com.assassin.running.money.R
-import com.assassin.running.money.utils.EditTextUtil
+import com.assassin.running.money.utils.NumberUtil
 import com.assassin.running.money.widget.NumberKeyboard
 import kotlinx.android.synthetic.main.money_alloc_activity.*
+
 
 /**
  * MoneyAllocActivity
@@ -23,10 +25,34 @@ class MoneyAllocActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         numberKeyboard = NumberKeyboard(applicationContext, keyboard_view)
-        numberKeyboard?.output = et_ma_total_money
+        tv_ma_total_money.setOnClickListener {
+            numberKeyboard?.apply {
+                output = it as TextView
+                maxInt = NumberUtil.MAX_INT
+                suffix = ""
+                showKeyboard()
+            }
+        }
 
-        etExpectIncome.customSelectionActionModeCallback = EditTextUtil.disableActionCallback()
+        tv_ma_expect_income.setOnClickListener {
+            numberKeyboard?.apply {
+                output = it as TextView
+                maxInt = NumberUtil.MAX_PERCENT
+                suffix = "%"
+                showKeyboard()
+            }
+        }
+    }
 
+    override fun onBackPressed() {
+        numberKeyboard?.apply {
+            if (isShow())
+                dismissKeyboard()
+            else
+                super.onBackPressed()
+            return
+        }
+        super.onBackPressed()
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
